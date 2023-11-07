@@ -1,0 +1,38 @@
+.products{
+    background-color: var(--color-backgroundblack);
+    .container{
+        h1{
+            color: var(--color-yellow);
+        }
+        .col-12{
+            margin-bottom: 6rem;
+            .card{
+                .card-img-top{
+                    height: 20rem;
+                }
+                .card-body{
+                    background-color: var(--color-backgroundblack);
+                    h5{
+                        font-family: Bebas Neue;
+                        margin: 2rem 0;
+                        cursor: pointer;
+                    }
+                    p{
+                        color: var(--color-white);
+                        font-family: Poppins;
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                        line-height: 2.4rem; 
+                        letter-spacing: -0.12px;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+        .product-slider{
+            .slick-next,.slick-prev{
+                display: none !important;
+            }
+        }
+    }
+}

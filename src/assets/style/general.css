@@ -1,0 +1,238 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  border: 0;
+  outline: 0;
+}
+
+:root {
+  --color-backgroundblack: #0e0e0e;
+  --color-black: #000;
+  --color-lwhite: #efefef;
+  --color-white: #fff;
+  --color-yellow: #fdce00;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: auto !important;
+}
+
+body {
+  color: var(--color-white);
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.4rem;
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  background-color: var(--color-backgroundblack);
+  color: var(--color-yellow);
+}
+
+::selection {
+  background-color: var(--color-backgroundblack);
+  color: var(--color-yellow);
+}
+
+*::-webkit-scrollbar {
+  width: 1.6rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-backgroundblack);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-yellow);
+  border-radius: 1rem;
+  border: 2px solid var(--color-backgroundblack);
+}
+
+.topbutton button {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  z-index: 99;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--color-white);
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.4rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+h1 {
+  font-family: Bebas Neue;
+  font-size: 12rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12rem;
+  letter-spacing: -1.8px;
+  text-transform: uppercase;
+  color: var(--color-lwhite);
+}
+
+h2 {
+  color: var(--color-black);
+  text-align: center;
+  font-family: Bebas Neue;
+  font-size: 7.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 7.3rem;
+  letter-spacing: -1.095px;
+}
+
+h3 {
+  font-family: Bebas Neue;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.5rem;
+  letter-spacing: -0.225px;
+  text-transform: uppercase;
+  color: var(--color-yellow);
+}
+
+h4 {
+  color: var(--color-backgroundblack);
+  text-align: center;
+  font-family: Bebas Neue;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+
+h5 {
+  color: var(--color-white);
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.2rem; /* 100% */
+  letter-spacing: -0.48px;
+}
+
+h6 {
+  color: var(--color-white);
+  font-family: Poppins;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.4rem;
+  letter-spacing: -0.12px;
+}
+
+p {
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: var(--color-lwhite);
+}
+
+span {
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--color-white);
+}
+
+.contain {
+  max-width: 137.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-fluid {
+  position: relative;
+  padding-top: 6rem;
+  margin-bottom: 12rem;
+}
+.section-fluid .d-flex {
+  padding-bottom: 3rem;
+  align-items: center;
+}
+.section-fluid .d-flex a:first-child {
+  margin-right: 3rem;
+}
+.section-fluid .d-flex a:last-child {
+  color: var(--color-yellow);
+  margin-left: 3rem;
+}
+.section-fluid h1 {
+  position: absolute;
+  bottom: -22%;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1000px) {
+  .contain {
+    padding: 0 6.5rem;
+  }
+  .offcanvas {
+    background: var(--color-backgroundblack) !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contain {
+    padding: 0 3.5rem;
+  }
+  .offcanvas .nav-link {
+    font-size: 2.2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .navbar .navbar-brand {
+    width: 10rem !important;
+  }
+  .navbar select {
+    margin-right: 2rem !important;
+  }
+  .section-fluid {
+    margin-bottom: 6rem !important;
+  }
+  .section-fluid .d-flex a {
+    display: none;
+  }
+  .section-fluid .d-flex a:last-child {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-fluid h1 {
+    bottom: -35% !important;
+  }
+}/*# sourceMappingURL=general.css.map */

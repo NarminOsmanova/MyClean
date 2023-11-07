@@ -1,0 +1,37 @@
+.servicedetails{
+    background-color: var(--color-backgroundblack);
+    .container-fluid{
+        .col-md-6{
+           .container-text{
+                max-width: 47rem;
+           }
+        }
+    }
+    .about-part{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-top: 13rem;
+        padding-bottom: 16rem;
+       .container-text{
+            span{
+                margin-bottom: 10rem;
+                display: block;
+            }   
+            h5{
+                cursor: pointer;
+            }     
+       }
+    }
+}
+@media screen and (max-width:768px) {
+    .servicedetails{
+        .container-img{
+            margin-bottom: 3rem;
+        }
+        .about-part{
+            margin-top: 4rem !important;
+            padding-bottom: 10rem !important;
+        }
+    }
+ }

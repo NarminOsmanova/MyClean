@@ -1,0 +1,38 @@
+.service{
+    background-color: var(--color-backgroundblack);
+    .container{
+        .col-12{
+            .container-img{
+                max-width: 47rem;
+            }
+            h3{
+                margin-bottom: 2rem;
+            }
+            span{
+                display: block;
+                max-width: 47rem;
+            }
+            .d-flex{
+                margin-top: 2.5rem;
+            }
+        }
+    }
+    .service-part{
+        padding-bottom: 6rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .service{
+        .container-text{
+            margin-top: 3rem;
+            h3{
+                font-size: 2.2rem;
+                line-height: 2.6rem;
+            }
+            h5{
+                font-size: 1.8rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+ }

@@ -1,0 +1,37 @@
+.blog{
+    background-color: var(--color-backgroundblack);
+    .container{
+        .row{
+            padding-bottom: 16rem;
+            .col-12{
+                .blog-text{
+                    max-width: 47rem;
+                    margin-left: 5rem;
+                    h3{
+                        margin-bottom: 2rem;
+                        color: var(--color-lwhite);
+                    }
+                    span{
+                        display: inline-block;
+                        margin-bottom: 5.7rem;
+                    }
+                    h5{
+                        cursor: pointer;
+                        span{
+                            font-size: 2.6rem;
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .blog{
+        .blog-text{
+            margin-left: 0 !important;
+            margin-top: 3rem;
+        }
+    }
+}
